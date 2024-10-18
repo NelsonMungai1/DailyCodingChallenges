@@ -24,7 +24,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 .card-details {
   position: absolute;
@@ -91,4 +91,67 @@ button {
   background: rgb(1, 1, 19);
   cursor: pointer;
   color: white;
+}
+/* card */
+.card-front,
+.card-back {
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+}
+.card-front {
+  background: url("./images/bg-card-front.png") no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px;
+  top: 20%;
+  left: 200px;
+}
+.card-back {
+  background: url("./images/bg-card-back.png") no-repeat;
+  top: 50%;
+  left: 300px;
+  background-size: contain;
+}
+
+.card-front .card-circles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+.card-front .round-white {
+  /* position: absolute;
+  top: 20px;
+  left: 20px; */
+  background: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.card-front .round-outline {
+  background-color: transparent;
+  border: 2px solid white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.card-front p {
+  font-size: 32px;
+  text-align: center;
+  word-spacing: 18px;
+  color: #fff;
+}
+.card-front .card-name {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
 }
